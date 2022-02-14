@@ -9,8 +9,22 @@ export interface MyLabelProps {
    * Este es el tamaño de la etiqueta
    */
   size: 'normal' | 'h1' | 'h2' | 'h3';
+  /**
+   * capitaliza el mensaje de la etiqueta
+   */
+  allCaps?: boolean;
+  /**
+   * color básicos del mensaje de la etiqueta
+   */
+  color?: 'primary' | 'secondary' | 'tertiary';
 }
 
-export default function MyLabel({ label = 'No label', size = 'normal' }: MyLabelProps) {
-  return <span className={`${size}`}>{label}</span>;
+export default function MyLabel({
+  allCaps = false,
+  color = 'primary',
+  label = 'No label',
+  size = 'normal',
+}: MyLabelProps) {
+  const message = allCaps ? label.toUpperCase() : label;
+  return <span className={`${size} text-${color}`}>{message}</span>;
 }
