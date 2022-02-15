@@ -7,3 +7,7 @@ dist-ssr
 # production
 /build
 /storybook-static
+
+# npm and yarn
+yarn.lock
+package-lock.json
