@@ -17,6 +17,10 @@ export interface MyLabelProps {
    * color básicos del mensaje de la etiqueta
    */
   color?: 'primary' | 'secondary' | 'tertiary';
+  /**
+   * color personalizado de la fuente
+   */
+  fontColor?: string;
 }
 
 export default function MyLabel({
@@ -24,7 +28,12 @@ export default function MyLabel({
   color = 'primary',
   label = 'No label',
   size = 'normal',
+  fontColor,
 }: MyLabelProps) {
   const message = allCaps ? label.toUpperCase() : label;
-  return <span className={`label ${size} text-${color}`}>{message}</span>;
+  return (
+    <span className={`label ${size} text-${color}`} style={{ color: fontColor }}>
+      {message}
+    </span>
+  );
 }
