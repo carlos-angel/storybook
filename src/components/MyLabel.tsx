@@ -26,5 +26,5 @@ export default function MyLabel({
   size = 'normal',
 }: MyLabelProps) {
   const message = allCaps ? label.toUpperCase() : label;
-  return <span className={`${size} text-${color}`}>{message}</span>;
+  return <span className={`label ${size} text-${color}`}>{message}</span>;
 }
