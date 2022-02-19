@@ -1,9 +1,27 @@
 {
-  "name": "storybook",
+  "name": "ca-storybook-components",
+  "private": false,
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "homepage": "https://carlos-angel.com",
+  "repository": {
+    "url": "https://github.com/carlos-angel/storybook",
+    "type": "git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "version": "0.0.0",
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build": "build-storybook"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "17.0.2",
