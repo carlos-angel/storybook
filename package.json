@@ -2,8 +2,8 @@
   "name": "ca-storybook-components",
   "private": false,
   "license": "MIT",
-  "typings": "dist/index.d.ts",
-  "main": "dist/index.js",
+  "typings": "dist/main.d.ts",
+  "main": "dist/main.js",
   "homepage": "https://carlos-angel.com",
   "repository": {
     "url": "https://github.com/carlos-angel/storybook",
@@ -36,6 +36,6 @@
     "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
     "babel-loader": "8.2.3",
-    "typescript": "4.4.4"
+    "typescript": "^4.5.5"
   }
 }
