@@ -23,17 +23,17 @@ export interface MyLabelProps {
   fontColor?: string;
 }
 
-export default function MyLabel({
+export const MyLabel = ({
   allCaps = false,
   color = 'primary',
   label = 'No label',
   size = 'normal',
   fontColor,
-}: MyLabelProps) {
+}: MyLabelProps) => {
   const message = allCaps ? label.toUpperCase() : label;
   return (
     <span className={`label ${size} text-${color}`} style={{ color: fontColor }}>
       {message}
     </span>
   );
-}
+};

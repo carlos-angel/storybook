@@ -1,4 +1,4 @@
-import MyLabel from '../../components/MyLabel';
+import { MyLabel } from '../../components/MyLabel';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {

@@ -1,4 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-ReactDOM.render(<React.StrictMode></React.StrictMode>, document.getElementById('root'));
+export { Button } from './stories/Button';
+export { Header } from './stories/Header';
+export { MyLabel } from './components/MyLabel';
+export { Page } from './stories/Page';
