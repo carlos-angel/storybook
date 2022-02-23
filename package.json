@@ -4,7 +4,7 @@
   "license": "MIT",
   "typings": "dist/main.d.ts",
   "main": "dist/main.js",
-  "homepage": "https://carlos-angel.com",
+  "homepage": "https://carlos-angel.github.io/storybook/?path=/story/example-introduction--page",
   "repository": {
     "url": "https://github.com/carlos-angel/storybook",
     "type": "git"
